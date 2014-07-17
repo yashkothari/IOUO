@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="$10.00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="91.4dp"
+        android:layout_height="68.9dp"
+        android:id="@+id/item_txtCost"
+        android:textSize="24dp"
+        android:layout_marginRight="7.2dp"
+        android:gravity="fill"
+        android:layout_marginLeft="5.4dp" />
+
+    <TextView
+        android:id="@+id/item_txtName"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_txtCost"
+        android:gravity="fill"
+        android:text="Yash Kothari"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/item_txtDetails"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_txtName"
+        android:layout_toRightOf="@+id/item_txtCost"
+        android:text="For the bus tickets" />
+
+</RelativeLayout>
