@@ -6,13 +6,6 @@
     android:minWidth="25dp"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/btnNewItem"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add New Item" />
-
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"

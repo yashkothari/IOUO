@@ -33,7 +33,7 @@ public class ItemCreationActivity extends Activity {
 		registerDoneBtnClickListener();
 	
 		if(getIntent().hasExtra("toEditListItem")) {
-			OwedItem editItem = getIntent().getParcelableExtra("listItem");
+			OwedItem editItem = getIntent().getParcelableExtra("toEditListItem");
 			edtAmount.setText(editItem.getAmount());
 			edtName.setText(editItem.getPersonName());
 			edtDetails.setText(editItem.getDetails());
