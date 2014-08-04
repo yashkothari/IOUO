@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name"></string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">IOUO</string>
     <string name="title_activity_create_item">Create New Item</string>
     <string name="create_title">Create</string>
     <string name="edit_title">Edit</string>
     <string name="delete_title">Delete</string>
+    <color name="IOUOblue">#1CB7E5</color>
 
 </resources>

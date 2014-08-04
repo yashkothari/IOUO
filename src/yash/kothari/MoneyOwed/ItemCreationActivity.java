@@ -3,10 +3,9 @@ package yash.kothari.MoneyOwed;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +16,6 @@ public class ItemCreationActivity extends Activity {
 	private EditText edtAmount;
 	private EditText edtName;
 	private EditText edtDetails;
-
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +24,6 @@ public class ItemCreationActivity extends Activity {
 		edtName = (EditText) findViewById(R.id.edtName);
 		edtDetails = (EditText) findViewById(R.id.edtDetails);
 
-		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_item);
 	
@@ -60,10 +57,7 @@ public class ItemCreationActivity extends Activity {
 				amount = edtAmount.getText().toString();
 				name = edtName.getText().toString();
 				details = edtDetails.getText().toString();
-				
-				
-				//TODO: change names of extras
-				
+								
 				if(amount.isEmpty() || name.isEmpty())
 				{
 					Toast.makeText(ItemCreationActivity.this, "Amount and name fields must be filled.", Toast.LENGTH_LONG).show();
