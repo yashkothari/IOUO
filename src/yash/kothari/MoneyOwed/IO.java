@@ -35,7 +35,7 @@ public class IO extends ListFragment {
 	}
 	
 	public void populateListView() { //adapts list of OwedItems to ListView
-		ioItems = ((MainActivity) getActivity()).getListItems();
+		ioItems = ((MainActivity) getActivity()).getIOList();
 		ArrayAdapter<OwedItem> listAdapter = new ItemListAdapter();
 		setListAdapter(listAdapter);
 	}

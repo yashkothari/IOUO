@@ -1,16 +1,17 @@
 package yash.kothari.MoneyOwed;
 
+import java.io.Serializable;
+
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class OwedItem implements Parcelable {
+public class OwedItem implements Parcelable, Serializable {
 	
 	private String personName;
 	private String amount;
 	private String details;
 
-	public OwedItem (String personName, String amount, String details)
-	{
+	public OwedItem (String personName, String amount, String details) {
 		this.personName = personName;
 		this.amount = amount;
 		this.details = details;
@@ -25,17 +26,13 @@ public class OwedItem implements Parcelable {
 	public String getDetails() {return details;}
 	public void setDetails(String value) {details = value;}
 
-	public void DeleteItem()
-	{
+	public void DeleteItem() {
 		setPersonName(null);
 		setAmount(null);
 		setDetails(null);
-
-		//find better way to destruct instance
 	}
 
-	public void EditItem(String editedItemName, String editedPersonName, String editedAmount, String editedDetails)
-	{
+	public void EditItem(String editedItemName, String editedPersonName, String editedAmount, String editedDetails) {
 		setPersonName(editedPersonName);
 		setAmount(editedAmount);
 		setDetails(editedDetails);
@@ -49,15 +46,14 @@ public class OwedItem implements Parcelable {
 		     mOwedItem.setDetails(source.readString());  
 		     return mOwedItem;  
 		 }  
+		 
 		 public OwedItem[] newArray(int size) {  
 		     return new OwedItem[size];  
 		 }  
-		    };
-	
+	};
 	
 	@Override
 	public int describeContents() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
@@ -66,7 +62,5 @@ public class OwedItem implements Parcelable {
 		parcel.writeString(getAmount());
 		parcel.writeString(getPersonName());
 		parcel.writeString(getDetails());
-		
-		
 	}
 }

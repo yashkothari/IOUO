@@ -35,7 +35,7 @@ public class UO extends ListFragment {
 	}
 	
 	public void populateListView() { //adapts list of OwedItems to ListView
-		uoItems = ((MainActivity) getActivity()).getListItems();
+		uoItems = ((MainActivity) getActivity()).getUOList();
 		ArrayAdapter<OwedItem> listAdapter = new ItemListAdapter();
 		setListAdapter(listAdapter);
 	}
